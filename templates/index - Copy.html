@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sentiment Analyser</title>
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename='sentimental.css')}}"> -->
+        <style>
+          body
+{
+    background-color: lightblue;
+}
+
+.sen
+{
+    padding-left: 550px;
+}
+
+#sent
+{
+    padding-left: 700px;
+}
+        </style>
+
+    </head>
+    <body>
+
+
+       
+        
+ <div class='sen'>
+        <h1>Tweet Sentiment Analyser</h1>
+        </div>
+        <form action="/predict" method="post">
+        
+            <div class="sen">
+          <textarea name='textarea' rows="20" cols="50" ></textarea>
+          </div>
+        
+        
+        <div id="sent">
+          <input type="submit" value="Predict">
+        </div>
+        </form>
+        <div class="sen">
+        <h1 >{{result}}</h1>
+     
+          </div>
+        
+            </body>
+        </html>
